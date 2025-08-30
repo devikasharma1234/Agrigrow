@@ -1,0 +1,104 @@
+/* Map Component Styles */
+#map {
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+
+#sidebar {
+  width: 400px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+#scanner {
+  margin-bottom: 20px;
+}
+
+#scanner input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+#scanner img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+#industry-list {
+  margin-bottom: 20px;
+}
+
+#industry-list .industry-item {
+  padding: 12px;
+  margin: 8px 0;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#industry-list .industry-item:hover {
+  background-color: #f8f9fa;
+}
+
+#industry-list .industry-item.selected {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+#industry-detail {
+  margin-top: 20px;
+}
+
+#industry-detail .detail-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Leaflet Map Customization */
+.leaflet-container {
+  height: 100vh;
+  width: 100%;
+}
+
+.leaflet-popup-content {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.leaflet-popup-content h3 {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+}
+
+.leaflet-popup-content p {
+  margin: 5px 0;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #sidebar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  #map {
+    height: 60vh;
+  }
+}
